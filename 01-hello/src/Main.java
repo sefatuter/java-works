@@ -63,6 +63,8 @@ public class Main {
         System.out.println(result);
 
 
+        char ch = '?';
+        System.out.println(ch);
 
     }
 }
