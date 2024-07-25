@@ -1,3 +1,4 @@
 .idea
 java-works.iml
 .out
+out/production/01-helloworld/Main.class
