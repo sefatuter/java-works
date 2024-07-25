@@ -20,5 +20,15 @@ public class Main {
         if (isPrime) {
             System.out.println("It's Prime Number");
         }
+
+
+        // Foreach loop usage
+
+        String[] names = new String[]{"A", "B", "C", "D", "E", "F", "G", "H", "I"};
+
+        for (String name : names) {
+            System.out.print(name + " ");
+        } // take one by one in names to assign name variable
+
     }
 }
