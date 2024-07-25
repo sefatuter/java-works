@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!"); // Comment line
@@ -63,6 +65,46 @@ public class Main {
 
         char ch = '?';
         System.out.println(ch);
+
+        int x = 10, n = 10;
+        float y = 2.4f;
+        float aa = x*y; // int = int or float=float must be !!
+        System.out.println(aa);
+
+        System.out.println(++x); // increase x and print
+        System.out.println(n++); // print n and increase
+        System.out.println(n);
+
+        // && and
+        // || or
+        // ! not
+        // ?: ternary
+
+        String result2 = x < 5 ? "True" : "False";
+        System.out.println(result2);
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Your Name: ");
+        String name1 = scanner.nextLine();
+
+        System.out.print("Enter Midterm1 Exam: ");
+        double exam1  = Double.parseDouble(scanner.nextLine());
+
+        System.out.print("Enter Midterm2 Exam: ");
+        double exam2  = Double.parseDouble(scanner.nextLine());
+
+        System.out.print("Enter Final Exam: ");
+        double finalExam  = Double.parseDouble(scanner.nextLine());
+
+        double resultExam = (exam1*0.3) + (exam2*0.3) + (finalExam*0.4);
+
+        System.out.println("Your Grade = " + resultExam);
+
+        if (resultExam < 60) System.out.print("You Failed. " + name1);
+        else System.out.print("You Passed. " + name1);
+
 
     }
 }
