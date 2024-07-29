@@ -106,5 +106,24 @@ public class Main {
         else System.out.print("You Passed. " + name1);
 
 
+        /* Double */
+        double whenDividendIsFloat = 3.0 / 2;
+        System.out.println(whenDividendIsFloat); // prints 1.5
+
+        double whenDivisorIsFloat = 3 / 2.0;
+        System.out.println(whenDivisorIsFloat); // prints 1.5
+
+        int first = 3;
+        int second = 2;
+
+        double results1 = (double) first / second;
+        System.out.println(results1); // prints 1.5
+
+        double results2 = first / (double) second;
+        System.out.println(results2); // prints 1.5
+
+        double result3 = (double) (first / second);
+        System.out.println(result3); // prints 1.0
+
     }
 }

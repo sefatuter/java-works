@@ -106,5 +106,44 @@ public class Main {
         }
          */
 
+        /*
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Input two strings");
+        String first = reader.nextLine();
+        String second = reader.nextLine();
+
+        if (first.equals(second)) {
+            System.out.println("The strings were the same!");
+        } else {
+            System.out.println("The strings were different!");
+        }
+
+        if (first.equals("two strings")) {
+            System.out.println("Clever!");
+        }
+
+        if (second.equals("two strings")) {
+            System.out.println("Sneaky!");
+        }
+         */
+
+        /* Input Equals usage
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Exit? (y exits)");
+            String input = scanner.nextLine();
+            if (input.equals("y")) {
+                break;
+            }
+
+            System.out.println("Ok! Let's carry on!");
+        }
+
+        System.out.println("Ready!");
+         */
+
     }
 }
