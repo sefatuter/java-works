@@ -145,5 +145,25 @@ public class Main {
         System.out.println("Ready!");
          */
 
+        Scanner scanner2 = new Scanner(System.in);
+
+        System.out.print("Enter num: ");
+        int num = scanner2.nextInt();
+
+        // Factorial
+        int sum = 1;
+        for (int i = 1; i <=num ; i++) {
+            sum *= i;
+        }
+        System.out.println(sum);
+
+//        for (int i = num; i <= 100; i ++) {
+//            System.out.println(i);
+//        }
+
+//        for (int i = 0; i <= num ; i++) {
+//            System.out.println(i);
+//        }
+
     }
 }
