@@ -80,18 +80,23 @@ public class Main {
         int[] array2 = {5, 1, 3, 4, 2};
         printArrayInStars(array2);
 
-    }
+        System.out.println();
+    } // main
+
+
     public static void printArrayInStars (int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i]; j++) {
+        for (int num : array) {
+            for (int j = 0; j < num; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
     }
+
     public static void printNeatly(int[] array) {
         for (int arr : array) System.out.print(arr + ", ");
     }
+
     // Array as a parameter of a method
     public static void listElements(int[] integerArray) {
         System.out.println("the elements of the array are: ");

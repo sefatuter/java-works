@@ -98,6 +98,72 @@ public class Solution {
             case 2:
                 System.out.println("Entered " + num11);
         }
+
+        // Strings
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Give a word: ");
+        // reading a line from the user and assigning it to the name variable
+        String name = reader.nextLine();
+
+        System.out.println(name);
+
+        System.out.println("-----------------------------");
+
+        // String Comparisons And "Equals"
+        System.out.print("Enter text: ");
+        String text = reader.nextLine();
+
+        if (text.equals("marzipan")) { // or text.equals(anotherText)
+            System.out.println("The text variable contains the text marzipan.");
+        } else {
+            System.out.println("The text variable does not contain the text marzipan.");
+        }
+
+        // NB! You can't compare strings with ==!
+
+        String text2 = "first second third fourth";
+        String[] pieces = text2.split(" "); // split method
+        System.out.println(pieces[0]);
+        System.out.println(pieces[1]);
+        System.out.println(pieces[2]);
+        System.out.println(pieces[3]);
+
+        System.out.println();
+
+        for (String piece : pieces) {
+            System.out.println(piece);
+        }
+
+        System.out.println();
+        // contains method
+
+        String text3 = "volcanologist";
+
+        if (text3.contains("can")) {
+            System.out.println("can was found");
+        }
+
+        if (!text3.contains("tin")) {
+            System.out.println("tin wasn't found");
+        }
+
+        System.out.println("----------------------");
+        int sum = 0;
+
+        while (true) {
+            String input = reader.nextLine();
+            if (input.equals("")) { // quit if enters nothing
+                break;
+            }
+
+            String[] parts = input.split(","); // split from ,
+            sum = sum + Integer.valueOf(parts[1]); // sum ages
+        }
+
+        System.out.println("Sum of the ages is " + sum);
+
     }
 }
 
