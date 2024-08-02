@@ -6,6 +6,9 @@ public class Student {
 
     // instead of doing this public String number;
     public static String number; // After we put static
+    // Statiğin bir başka görevi de değişkeni SINIF seviyesine çıkartıyor, NESNE seviyesi yerine!
+
+    public String number1;
 
     // Creating Static method
     public static void writeNumber(String number) {

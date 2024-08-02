@@ -22,5 +22,29 @@ public class Main {
         Student student = new Student(); // Using without static
         student.setId(12L);
         student.studentInfo();
+
+        System.out.println();
+
+        Student student1 = new Student();
+        System.out.println("------------------------");
+        student1.number1 = "2313213"; // public we can access
+        System.out.println(student1.number1); // prints 2313213
+// Each time an object is created, the values assigned to it are unique to that object
+        System.out.println("------------------------");
+        Student student2 = new Student();
+        System.out.println(student2.number1); // prints null
+
+        // BUT! if we make static, it becomes a class-based variable !!!
+        System.out.println();
+
+        System.out.println("------------------------");
+        student1.number = "2313213"; // public we can access
+        System.out.println(student1.number); // prints 2313213
+        System.out.println("------------------------");
+
+        System.out.println(student2.number); // prints null
+// Although the value was assigned through the student1 reference, it was also valid in the second generated object
+
+
     }
 }
