@@ -1,5 +1,6 @@
 import model.Animal;
 import model.Dog;
+import model2.A;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,9 +28,22 @@ public class Main {
         /*
         1- More than one class can inherit a class. But a class can inherit only one. Like Dog class can inherit from Animal only but not "Animal, Dog" together, only one inherit.
         2- Protected, can be accessed from both the class it is in and within the class that inherits that class. At main inaccessible
+        3- Constructors
+        4- this, super and super()
+        5- Method override
         */
 //        Animal.numberOfFeet  // Can't accessible because it's protected.
 
+        System.out.println("------------------------------");
+        A aObject = new A(); // Automatically goes A's constructor
+        // Goes to the inherited constructive method --> So it's first write C's constructor then B and A.
+
+        A aObject2 = new A(5,8);
+
+        System.out.println("------------------------------");
+//        aObject2.aClassMethod();
+        System.out.println("B Variable 1: " + aObject2.bVar1);
+        System.out.println("B Variable 2: " + aObject2.bVar2);
 
     }
 }
