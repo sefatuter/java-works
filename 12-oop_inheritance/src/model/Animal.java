@@ -11,4 +11,8 @@ public class Animal { // Super Class /
         this.animalName = animalName;
         System.out.println("Animal name is: " + this.animalName);
     }
+
+    public void giveVoice() {
+        System.out.println("Voicing Animal ....");
+    }
 }

@@ -10,4 +10,9 @@ public class Dog extends Animal{ // Taking Animal class inherit // Sub Class
     public Dog() { // Constructor
         numberOfFeet = 15;
     }
+
+    @Override
+    public void giveVoice() {
+        System.out.println("Voicing howf");
+    }
 }

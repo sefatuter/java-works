@@ -1,4 +1,6 @@
 import model.Animal;
+import model.Cat;
+import model.Chicken;
 import model.Dog;
 import model2.A;
 
@@ -44,6 +46,27 @@ public class Main {
 //        aObject2.aClassMethod();
         System.out.println("B Variable 1: " + aObject2.bVar1);
         System.out.println("B Variable 2: " + aObject2.bVar2);
+
+        System.out.println("------------------------------");
+
+        Cat cat = new Cat();
+        cat.giveVoice(); // Method override
+
+        System.out.println("------------------------------");
+
+        Dog dog2 = new Dog();
+        dog2.giveVoice(); // Method override
+
+        /*
+        When an object is derived from the Cat class and the giveVoice() method is used,
+        the overridden method in the Cat method will be used,
+        not the method in the Animal class.
+         */
+
+        System.out.println("------------------------------");
+
+        Chicken chicken = new Chicken();
+        chicken.giveVoice();
 
     }
 }
