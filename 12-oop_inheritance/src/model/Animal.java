@@ -4,8 +4,8 @@ public class Animal { // Super Class /
     public Long id;
     public String animalName;
     public int age;
-    public String color;
-    public int numberOfFeet;
+    private String color;
+    protected int numberOfFeet;
 
     public void writeName(String animalName) {
         this.animalName = animalName;
