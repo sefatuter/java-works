@@ -97,6 +97,7 @@ public class Main {
         for (int arr : array) System.out.print(arr + ", ");
     }
 
+
     // Array as a parameter of a method
     public static void listElements(int[] integerArray) {
         System.out.println("the elements of the array are: ");
