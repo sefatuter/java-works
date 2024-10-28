@@ -51,7 +51,7 @@ public class Main {
     public void foreach(){
 
         //for (type variableName : arrayName) {
-            // code block to be executed
+        // code block to be executed
         //}
 
         int[] studentGrades = new int[5];
