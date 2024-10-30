@@ -23,6 +23,6 @@ public class Main {
         System.out.println(calc.add(10, 20));         // Calls int version
         System.out.println(calc.add(10, 20, 30));     // Calls int version with 3 parameters
         System.out.println(calc.add(5.5, 7.5));       // Calls double version
-        System.out.print("Test");
+        System.out.println("TESTd");
     }
 }
