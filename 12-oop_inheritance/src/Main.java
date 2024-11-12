@@ -40,7 +40,8 @@ public class Main {
         A aObject = new A(); // Automatically goes A's constructor
         // Goes to the inherited constructive method --> So it's first write C's constructor then B and A.
 
-        A aObject2 = new A(5,8);
+        System.out.println("------------------------------");
+        A aObject2 = new A(5,8);  // When called with parameter.
 
         System.out.println("------------------------------");
 //        aObject2.aClassMethod();
