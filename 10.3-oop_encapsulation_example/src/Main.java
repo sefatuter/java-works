@@ -19,7 +19,7 @@ public class Main {
             String tckn = scanner.nextLine();
             tcknObject.setTckn(tckn);
         }
-
-
+        String s = tcknObject.getTckn();
+        System.out.println(s);
     }
 }

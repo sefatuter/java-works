@@ -1,10 +1,11 @@
-public abstract class Employee implements Maaslar{
+public abstract class Employee implements Maaslar, Sigorta{
 
     private String firstName;
     public String lastName;
     private String socialSecurityNumber;
     public String number;
     private String tcKimlikNo;
+
 
     // three-argument constructor
     public Employee(String first, String last, String ssn) {
@@ -21,4 +22,5 @@ public abstract class Employee implements Maaslar{
     public String getFirstName() {
         return firstName;
     }
+
 }

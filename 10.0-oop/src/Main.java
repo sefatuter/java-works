@@ -28,6 +28,7 @@ public class Main {
         System.out.println();
 
 //    student1.gender // is not accessible
+        System.out.println(student1.getGender());
          Student student5 = new Student("Boy"); // without parameter
          student5.writeGender();
 

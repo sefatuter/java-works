@@ -10,4 +10,8 @@ public class Temizlikci extends Employee {
         throw new UnsupportedOperationException("Unimplemented method 'maasHesapla'");
     }
 
+    @Override
+    public double sigortaHesapla() {
+        return 0;
+    }
 }

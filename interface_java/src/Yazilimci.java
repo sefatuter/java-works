@@ -1,4 +1,7 @@
 public class Yazilimci extends Employee implements Maaslar {
+
+    public String lastName;
+
     public Yazilimci(String maas, String first, String last, String ssn) {
         super(first, last, ssn);
 
@@ -11,12 +14,15 @@ public class Yazilimci extends Employee implements Maaslar {
         // TODO Auto-generated constructor stub
     }
 
+
+
     void test() {
         lastName = "20";
         System.out.println(
                 super.getFirstName()
 
         );
+
         setFirstName("Onur");
     }
 
@@ -26,4 +32,8 @@ public class Yazilimci extends Employee implements Maaslar {
         return 500 * 30;
     }
 
+    @Override
+    public double sigortaHesapla() {
+        return 0;
+    }
 }

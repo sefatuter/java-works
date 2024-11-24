@@ -10,4 +10,8 @@ public abstract class Employee {
         lastName = last;
         socialSecurityNumber = ssn;
     }
+
+    public void getVoice(){
+        System.out.println("Voice");
+    }
 }
