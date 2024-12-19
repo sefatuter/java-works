@@ -1,11 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
-    int x;
-    public int square(int number) {
-        return number*number;
+    public static int square(int number) {
+        return number * number;
     }
+
     public static void main(String[] args) {
-        System.out.println("Enter Number\n");
-        System.in.read(x);
-        System.out.println("square: %d", square(x));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number:");
+        int x = sc.nextInt(); // Corrected the input assignment
+        System.out.printf("Square: %d%n", square(x)); // Corrected the output to use printf
     }
 }
