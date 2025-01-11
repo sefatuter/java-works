@@ -36,3 +36,10 @@ public class Main {
 
     }
 }
+
+
+// Running state
+// Waiting state   -- waits for other thread to finish job
+
+// Sleeping thread -- sleeps certain period of time (called sleep interval)
+// terminated state-- when it successfully complete and otherwise terminates

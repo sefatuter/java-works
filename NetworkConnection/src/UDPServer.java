@@ -24,7 +24,7 @@ public class UDPServer {
                     }
 
                     byte[] sendData = message.getBytes();
-                    DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("localhost"), 12346);
+                    DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("192.168.1.101"), 12346);
                     socket.send(sendPacket);
                 }
             } catch (IOException e) {

@@ -13,11 +13,11 @@ public class SimpleArray {
 
     public synchronized void add(int value){
         int position = writeIndex;
-        try {
-            Thread.sleep(generator.nextInt(10));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(generator.nextInt(10));
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         array[position] = value;
         System.out.printf("%s wrote %2d to element %d.\n",

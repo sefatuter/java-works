@@ -21,15 +21,23 @@ public class Main {
 
 //        basket.add(new Pineapple("ananas1"));
 
-        GenericFruitBasket basket2 = new GenericFruitBasket();
+        GenericFruitBasket<Apple> basket2 = new GenericFruitBasket();
         basket2.add(new Apple("elma1"));
         basket2.add(new Apple("elma2"));
-        basket2.add(new Pineapple("Pineapple1"));
-        basket2.add(new Pineapple("Pineapple2"));
+
+        GenericFruitBasket<Pineapple> basket3 = new GenericFruitBasket();
+        basket3.add(new Pineapple("Pineapple1"));
+        basket3.add(new Pineapple("Pineapple2"));
 
 //        basket2.add("nanay");
         basket2.showFruiteBasket();
+        basket3.showFruiteBasket();
 
+
+        GenericBasketArrayList<Apple> basket4 = new GenericBasketArrayList();
+        basket4.add(new Apple("elmaType2-1")); // Uses ArrayList's add function without need to create override add function
+        basket4.removeFirst();
+        basket4.showFruiteBasket();
 
     }
 }

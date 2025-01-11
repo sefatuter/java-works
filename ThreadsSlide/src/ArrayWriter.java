@@ -9,9 +9,16 @@ public class ArrayWriter implements Runnable{
         sharedSimpleArray = array;
     }
 
-    public void run() {
+    public synchronized void run() {
         for (int i = startValue; i < startValue + 3; i++) {
             sharedSimpleArray.add(i);
+
+            // synchronized
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
         }
     }
 }
