@@ -106,10 +106,10 @@ public class MyUI extends JFrame implements ActionListener {
             label1.setText("Calculating...");
 
             // Start calculation
-            new BC(number, label1) {
+            new BC(number, label1) { // yeni class yazmak yerine inline class olusturuldu, BC.java'yi extend eden adı olmayan inline class .
                 @Override
                 protected void done() {
-                    super.done();
+                    super.done();  // super kullanımında Extend edilen class BC.java'daki BC() {}'den onun done() metodu cagirilir.
                     button1.setEnabled(true);
                 }
             };
