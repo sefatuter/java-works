@@ -4,7 +4,7 @@ public class Cat extends Animal {
     public void sesCikar() {
         // TODO Auto-generated method stub
 
-        super.sesCikar();
+//        super.sesCikar();
         System.out.println("Miyav miyav!");
     }
 

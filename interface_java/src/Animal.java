@@ -1,8 +1,11 @@
 public abstract class Animal {
     public int number = 10;
 
-    public void sesCikar() {
+    public Animal(){
+        System.out.println(number);
     }
+
+    public abstract void sesCikar();
 
     static public void haraketEt() {
     }
